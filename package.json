@@ -1,7 +1,7 @@
 {
-  "name": "spring-picker2",
+  "name": "easy-picker-demo",
   "version": "2.3.7",
-  "description": "react picker",
+  "description": "react picker easy-picker-demo",
   "scripts": {
     "start": "cross-env NODE_ENV=dev webpack-dev-server --inline --progress",
     "build": "rimraf build && cross-env NODE_ENV=production webpack -p --progress",
@@ -15,10 +15,10 @@
       "es2015"
     ]
   },
-  "homepage": "https://github.com/nonjene/picker.git",
+  "homepage": "https://github.com/libin1991/easy-npm/tree/master/easy-picker",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nonjene/picker.git"
+    "url": "https://github.com/libin1991/easy-npm/tree/master/easy-picker"
   },
   "license": "MIT",
   "dependencies": {
@@ -62,10 +62,8 @@
     "react-transition-group": "^2.2.1"
   },
   "bugs": {
-    "url": "https://github.com/nonjene/picker/issues"
+    "url": "https://github.com/libin1991/easy-npm/tree/master/easy-picker"
   },
-  "main": "lib/index.js",
-  "style": "lib/style.css",
   "contributors": [
     "springalskey",
     "nonjene"

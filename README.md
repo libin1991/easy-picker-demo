@@ -1,4 +1,4 @@
-## 移动端react选择器，支持多级联动
+## 移动端react选择器，支持多级联动 , **秒杀其它大多数picker组件**
 
 forked from [springalskey/picker](https://github.com/springalskey/picker)
 
@@ -6,7 +6,7 @@ forked from [springalskey/picker](https://github.com/springalskey/picker)
 
 ## 特点
 
- * 真实的3D滚轮，效果更接近原生，秒杀其它大多数picker组件🙃
+ * 真实的3D滚轮，效果更接近原生
  * 更合理的用户交互
  * 支持多级联动，选项动态更新
  * 灵活的选项配置
@@ -28,58 +28,148 @@ Chrome打开开发者工具，切换到手机模拟器预览
 ## 如何使用
 
 ```shell
-$ npm install spring-picker2 -S
+$ npm install easy-picker -S
 ```
 ```js
-import 'spring-picker/lib/style.css';
-import { Picker, Popup, PopupPicker } from 'spring-picker';
+import React from 'react';
+// import { Picker, Popup, PopupPicker } from '../../components';
+import './index.scss';
+import { Picker, Popup, PopupPicker } from 'easy-picker';
 
-constructor(){
-  // 数据结构例子
-  this.state = {
-    selected:{
-      year: '2018',
-      month: '02'
-    }
-  }
-  this.data = {
-     "year": [
-        {name:"2018年",value:"2018"},
-        {name:"2019年",value:"2019"},
-      ],
-      "month":[
-        {name:"1月", value:"01"},
-        {name:"2月", value:"02"},
-      ]
-  };
-}
-render(){
-  // 使用方式1，使用PopupPicker，只需要传递数据
-  <PopupPicker 
-    data={this.data} 
-    selectedValue={this.state.selected}
-    visible={this.state.visible2}
-    onCancel={()=>this.setState({ visible2: false })}
-    onSelect={selectedValue=>this.setState({
-      visible2: false,
-      selectedValue
-    })}
-    onChanging={(selectedValue, key, value, name)=>{
-      console.log(selectedValue, key, value, name)
-    }}
-  />
+const userData = {
+	data1: [{
+			name: '杜保坤',
+			value: 0
+		},
+		{
+			name: '况宏瑞',
+			value: 1
+		},
+		{
+			name: '盘维',
+			value: 2
+		},
+		{
+			name: '杨泉',
+			value: 3
+		},
+		{
+			name: '福娃',
+			value: 4
+		},
+		{
+			name: 'Lincal',
+			value: 5
+		},
+		{
+			name: '记忆残骸',
+			value: 6
+		},
+		{
+			name: 'Raoh',
+			value: 7
+		},
+		{
+			name: '铁甲飞龙',
+			value: 8
+		},
+		{
+			name: '吴泽兵',
+			value: 9
+		},
+		{
+			name: '邱福龙',
+			value: 10
+		},
+		{
+			name: '小泥巴',
+			value: 11
+		}
+	]
+};
 
-  // 使用方式2，自己组合
-  <Popup
-    onCancel={this.cancelUserPicker.bind(this)}
-    onConfirm={this.closeUserPicker.bind(this)}
-    visible={this.state.userPickerVisible}>
-    <Picker
-      onChange={this.handleChangeUser.bind(this)}
-      data={this.data.year}
-      selectedValue={this.state.selected.year}
-    />
-  </Popup>
+export default class PickerDemo extends React.Component {
+	constructor() {
+		super();
+
+		this.state = {
+			userPickerVisible: false,
+			selectedValue: {
+				data1: 4
+			},
+			// 第一个picker没有用<PopupPicker/>, 要自己缓存用户滚动时，但未点击“完成”时的值
+			cacheSelectedValue1: 4
+		};
+	}
+
+	// user选择
+	showUserPicker(e) {
+		e.nativeEvent.stopImmediatePropagation();
+		this.setState({
+			userPickerVisible: true
+		});
+	}
+
+	 
+
+	closeUserPicker() {
+		console.log("ok");
+		this.setState({
+			userPickerVisible: false,
+			selectedValue: {
+				...this.state.selectedValue,
+				data1: this.state.cacheSelectedValue1
+			}
+		});
+	}
+
+	cancelUserPicker() {
+		console.log('关闭');
+		this.setState({
+			userPickerVisible: false
+		});
+	}
+
+	render() {
+		return(
+			<main className="picker-demo">
+		        <header>
+		          <p>已选择：{JSON.stringify(
+		            PopupPicker.getName(userData, this.state.selectedValue)
+		          )}</p>
+		        </header>
+		
+		        <section className="button-wrap">
+		          <button
+		            type="button"
+		            onClick={this.showUserPicker.bind(this)}
+		            className="btn button-primary"
+		          >
+		            {`单项选择`}
+		          </button>
+		        </section>
+
+
+
+		        <Popup
+		          onCancel={this.cancelUserPicker.bind(this)}
+		          onConfirm={this.closeUserPicker.bind(this)}
+		          visible={this.state.userPickerVisible}
+		        >
+		          <Picker
+		            onChange={value =>{
+		          	  console.log('onChange:' + value)
+		              this.setState({
+		                cacheSelectedValue1: value
+		              })}
+		            }
+		            data={userData.data1}
+		            selectedValue={this.state.cacheSelectedValue1}
+		          />
+		        </Popup>
+            </main>
+		);
+	}
 }
 
 ```
