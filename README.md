@@ -1,4 +1,4 @@
-## 移动端react-picker选择器，支持一级，二级，多级联动， **秒杀其它大多数picker组件**
+## 移动端react选择器easy-picker，支持多级联动， **秒杀其它大多数picker组件**
 
 **forked from** [springalskey/picker](https://github.com/springalskey/picker)
 -  修复了滑动卡顿问题
