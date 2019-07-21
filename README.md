@@ -1,10 +1,12 @@
 ## 移动端react选择器，支持多级联动 , **秒杀其它大多数picker组件**
 
 forked from [springalskey/picker](https://github.com/springalskey/picker)
+> 修复了滑动卡顿问题
+> 统一了样式
 
 在原有的基础上优化了实现，更换了更清晰的数据格式，更好的交互体验。
 
-## 快速体验[https://libin1991.github.io/easy-picker-demo/demo/](https://libin1991.github.io/easy-picker-demo/demo/)
+## 快速体验 : [https://libin1991.github.io/easy-picker-demo/demo/](https://libin1991.github.io/easy-picker-demo/demo/)
 
 ## 特点
 
