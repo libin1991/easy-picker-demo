@@ -37,7 +37,7 @@ Chrome打开开发者工具，切换到手机模拟器预览
 ## 如何使用
 
 ```shell
-$ npm install easy-picker -S
+$ cnpm install easy-picker -S   
 ```
 ## [单列](https://github.com/libin1991/easy-picker-demo/blob/e77ea0a79e1d036b692626dc513dfaad4a7bf6f4/src/container/picker/picker-demo1.jsx)
 ```js
