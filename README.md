@@ -7,6 +7,10 @@
 
 在原有的基础上优化了实现，更换了更清晰的数据格式，更好的交互体验。
 
+
+
+
+
 ## 快速体验 : [https://libin1991.github.io/easy-picker-demo/demo/](https://libin1991.github.io/easy-picker-demo/demo/)
 
 ## 特点
