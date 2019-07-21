@@ -16,6 +16,7 @@
  * 支持多级联动，选项动态更新
  * 灵活的选项配置
  * 兼容ios的背景滚动问题
+ * 更多示例参考[easy-ts-cli](https://github.com/libin1991/easy-ts-cli)
 
 
 ## 快速体验 : [https://libin1991.github.io/easy-picker-demo/demo/](https://libin1991.github.io/easy-picker-demo/demo/)
