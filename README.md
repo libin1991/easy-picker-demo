@@ -7,19 +7,20 @@
 
 在原有的基础上优化了实现，更换了更清晰的数据格式，更好的交互体验。
 
-
-
-
-
-## 快速体验 : [https://libin1991.github.io/easy-picker-demo/demo/](https://libin1991.github.io/easy-picker-demo/demo/)
-
 ## 特点
 
+ * 兼容rem布局
+ * 支持一级，二级，多级联动（不联动）
  * 真实的3D滚轮，效果更接近原生
  * 更合理的用户交互
  * 支持多级联动，选项动态更新
  * 灵活的选项配置
  * 兼容ios的背景滚动问题
+
+
+## 快速体验 : [https://libin1991.github.io/easy-picker-demo/demo/](https://libin1991.github.io/easy-picker-demo/demo/)
+
+
 
 ## demo预览
 
