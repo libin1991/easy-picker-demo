@@ -20,7 +20,10 @@
 
 
 ## 快速体验 : [https://libin1991.github.io/easy-picker-demo/demo/](https://libin1991.github.io/easy-picker-demo/demo/)
+## 口说无凭，扫码体验
+> 手机二维码扫描预览
 
+![image](https://raw.githubusercontent.com/libin1991/easy-picker-demo/master/demo/1563702476_wps%E5%9B%BE%E7%89%87.png)
 
 
 ## demo预览
@@ -29,12 +32,6 @@
 
 Chrome打开开发者工具，切换到手机模拟器预览  
 [demo](https://libin1991.github.io/easy-picker-demo/demo/)
-
-
-手机二维码扫描预览
-
-![image](https://raw.githubusercontent.com/libin1991/easy-picker-demo/master/demo/1563702476_wps%E5%9B%BE%E7%89%87.png)
-
 
 ## 如何使用
 
