@@ -1,0 +1,38 @@
+.list {
+  width: 100%;
+}
+
+.list .item {
+  height: 56px;
+  line-height: 56px;
+  margin: 0 10px;
+  border-bottom: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.list .item-label {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  padding-right: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  color: #000;
+  position: relative;
+}
+
+.list .item-label:after {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #000;
+  border-left: 0;
+  border-top: 0;
+  transform: rotate(315deg);
+  content: '';
+  position: absolute;
+  right: 8px;
+  top: 23px;
+}
