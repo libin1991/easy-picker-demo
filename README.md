@@ -3,7 +3,7 @@
 **forked from** [springalskey/picker](https://github.com/springalskey/picker)
 -  修复了滑动卡顿问题
 -  统一了样式
--  **fix掉rem布局缺陷(导致滑动计算误差)**
+-  **fix掉rem布局缺陷(导致滑动计算误差问题)**
 
 在原有的基础上优化了实现，更换了更清晰的数据格式，更好的交互体验。
 
