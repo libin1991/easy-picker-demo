@@ -14,15 +14,15 @@ forked from [springalskey/picker](https://github.com/springalskey/picker)
 
 ## demo预览
 
-![image](https://nonjene.github.io/demo/spring-picker2/out.gif)
+![image](https://raw.githubusercontent.com/libin1991/easy-picker-demo/master/demo/1563702409(1).jpg)
 
 Chrome打开开发者工具，切换到手机模拟器预览  
-[demo](https://nonjene.github.io/demo/spring-picker2/index.html)
+[demo](https://libin1991.github.io/easy-picker-demo/demo/)
 
 
 手机二维码扫描预览
 
-![image](https://nonjene.github.io/demo/spring-picker2/qrcode.png)
+![image](https://raw.githubusercontent.com/libin1991/easy-picker-demo/master/demo/1563702476_wps%E5%9B%BE%E7%89%87.png)
 
 
 ## 如何使用
