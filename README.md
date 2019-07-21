@@ -1,6 +1,6 @@
 ## 移动端react选择器，支持多级联动 , **秒杀其它大多数picker组件**
 
-forked from [springalskey/picker](https://github.com/springalskey/picker)
+**forked from** [springalskey/picker](https://github.com/springalskey/picker)
 -  修复了滑动卡顿问题
 -  统一了样式
 -  fix掉rem布局缺陷(导致滑动计算误差)
