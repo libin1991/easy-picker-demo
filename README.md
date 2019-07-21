@@ -35,6 +35,7 @@ Chrome打开开发者工具，切换到手机模拟器预览
 ```shell
 $ npm install easy-picker -S
 ```
+## [单列](https://github.com/libin1991/easy-picker-demo/blob/e77ea0a79e1d036b692626dc513dfaad4a7bf6f4/src/container/picker/picker-demo1.jsx)
 ```js
 import React from 'react';
 // import { Picker, Popup, PopupPicker } from '../../components';
@@ -178,6 +179,9 @@ export default class PickerDemo extends React.Component {
 }
 
 ```
+
+## [双列不联动](https://github.com/libin1991/easy-picker-demo/blob/e77ea0a79e1d036b692626dc513dfaad4a7bf6f4/src/container/picker/picker-demo2.jsx)
+## [城市选择器](https://github.com/libin1991/easy-picker-demo/blob/e77ea0a79e1d036b692626dc513dfaad4a7bf6f4/src/container/picker/picker-demo3.jsx)
 
 ## API
 
